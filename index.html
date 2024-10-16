@@ -205,7 +205,9 @@
                 formContainer.innerHTML = `
                     <h3 class="text-center mb-4">Thank You!</h3>
                     <p>Your request has been received. You can securely close this page now.</p>
+                    <p><a href="https://platform.getbonzo.com/register/emc-bundle" target="_blank" class="btn btn-link">Tap here to open in new window</a></p>
                 `;
+                window.location.href = "https://platform.getbonzo.com/register/emc-bundle";
                 formContainer.scrollIntoView({ behavior: 'smooth' });
             })
             .catch((error) => {
